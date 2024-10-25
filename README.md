@@ -28,11 +28,9 @@ Este projeto foi desenvolvido utilizando as tecnologias abordadas no módulo:
 
    ````bash
    git clone https://github.com/marcelypcosta/ToDoList.git
-
-   ```bash
+   
    npm install
 
-   ```bash
    npm run dev
 
 ## Aprendizados
