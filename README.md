@@ -32,6 +32,7 @@ Este projeto foi desenvolvido utilizando as tecnologias abordadas no módulo:
 
 2. **Instala as dependencias**:
 
+<<<<<<< HEAD
 ```bash
   npm install
 ```
@@ -41,6 +42,17 @@ Este projeto foi desenvolvido utilizando as tecnologias abordadas no módulo:
 ```bash
   npm run dev
 ```
+=======
+   ```bash
+     npm install
+   ```
+
+3. **Iniciar o projeto**:
+
+   ```bash
+     npm run dev
+   ```
+>>>>>>> 80a5dd9c3c99eb1fb392f52ee050f76237551fdd
 
 ## Aprendizados
 
