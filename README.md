@@ -1,54 +1,40 @@
-<<<<<<< HEAD
-# Desafio-ToDoList
-=======
-# React + TypeScript + Vite
+# To-Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação de controle de tarefas no estilo **to-do list**, desenvolvida utilizando as tecnologias do primeiro módulo do Ignite da Rocketseat. A aplicação permite adicionar, marcar como concluída, desmarcar e remover tarefas, além de mostrar o progresso de conclusão.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Adicionar uma nova tarefa**: Insira uma tarefa e adicione-a à lista.
+- **Marcar e desmarcar uma tarefa como concluída**: Clique em uma tarefa para marcar como concluída ou desmarcar.
+- **Remover uma tarefa da listagem**: Remova uma tarefa que não deseja mais manter.
+- **Mostrar o progresso de conclusão**: Visualize o progresso geral de suas tarefas.
+- 
+## Layout
 
-## Expanding the ESLint configuration
+O design da aplicação foi criado no Figma e está disponível no seguinte link: [Figma - ToDo List](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate). O layout oferece uma interface moderna e intuitiva, com foco na usabilidade e clareza.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+Este projeto foi desenvolvido utilizando as tecnologias abordadas no módulo:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: Biblioteca JavaScript para a criação de interfaces.
+- **TypeScript**: Linguagem de tipagem estática, utilizada para melhorar a segurança e legibilidade do código.
+- **Vite**: Ferramenta de build rápida para projetos React.
+- **Tailwind CSS**: Framework de utilitários CSS para estilização rápida e responsiva.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Como Iniciar o Projeto
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clonar o repositório**:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
->>>>>>> 32e6135 (Add files with initial settings)
+   ````bash
+   git clone https://github.com/marcelypcosta/ToDoList.git
+
+   ```bash
+   npm install
+
+   ```bash
+   npm run dev
+
+## Aprendizados
+
+Durante o desenvolvimento, utilizei o Vite para iniciar rapidamente o projeto e garantir uma experiência de desenvolvimento otimizada. Apliquei TypeScript para melhorar a tipagem e evitar erros, além de trabalhar com conceitos fundamentais do React, como gerenciamento de estado e renderização condicional. Com o Tailwind CSS, estilizamos rapidamente a aplicação com classes utilitárias, mantendo o foco na lógica e estrutura do projeto.
