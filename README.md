@@ -26,13 +26,12 @@ Este projeto foi desenvolvido utilizando as tecnologias abordadas no módulo:
 
 1. **Clonar o repositório**:
 
-   ```bash
-   git clone https://github.com/marcelypcosta/ToDoList.git
-   ```
+```bash
+  git clone https://github.com/marcelypcosta/ToDoList.git
+```
 
 2. **Instala as dependencias**:
 
-<<<<<<< HEAD
 ```bash
   npm install
 ```
@@ -42,22 +41,7 @@ Este projeto foi desenvolvido utilizando as tecnologias abordadas no módulo:
 ```bash
   npm run dev
 ```
-=======
-   ```bash
-     npm install
-   ```
-
-3. **Iniciar o projeto**:
-
-   ```bash
-     npm run dev
-   ```
->>>>>>> 80a5dd9c3c99eb1fb392f52ee050f76237551fdd
 
 ## Aprendizados
 
 Durante o desenvolvimento, utilizei o Vite para iniciar rapidamente o projeto e garantir uma experiência de desenvolvimento otimizada. Apliquei TypeScript para melhorar a tipagem e evitar erros, além de trabalhar com conceitos fundamentais do React, como gerenciamento de estado e renderização condicional. Com o Tailwind CSS, estilizamos rapidamente a aplicação com classes utilitárias, mantendo o foco na lógica e estrutura do projeto.
-
-```
-
-```
