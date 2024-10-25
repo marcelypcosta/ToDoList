@@ -25,15 +25,16 @@ Este projeto foi desenvolvido utilizando as tecnologias abordadas no módulo:
 ## Como Iniciar o Projeto
 
 1. **Clonar o repositório**:
-
    ````bash
    git clone https://github.com/marcelypcosta/ToDoList.git
 
-   ```bash
-   npm install
+2. **Instala as dependencias**:
+  ```bash
+    npm install
 
-   ```bash
-   npm run dev
+3. **Iniciar o projeto**:
+  ```bash
+    npm run dev
 
 ## Aprendizados
 
