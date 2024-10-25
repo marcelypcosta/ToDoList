@@ -8,7 +8,7 @@ Este projeto é uma aplicação de controle de tarefas no estilo **to-do list**,
 - **Marcar e desmarcar uma tarefa como concluída**: Clique em uma tarefa para marcar como concluída ou desmarcar.
 - **Remover uma tarefa da listagem**: Remova uma tarefa que não deseja mais manter.
 - **Mostrar o progresso de conclusão**: Visualize o progresso geral de suas tarefas.
-- 
+
 ## Layout
 
 O design da aplicação foi criado no Figma e está disponível no seguinte link: [Figma - ToDo List](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate). O layout oferece uma interface moderna e intuitiva, com foco na usabilidade e clareza.
@@ -26,12 +26,21 @@ Este projeto foi desenvolvido utilizando as tecnologias abordadas no módulo:
 
 1. **Clonar o repositório**:
 
-   ````bash
+   ```bash
    git clone https://github.com/marcelypcosta/ToDoList.git
-   
-   npm install
+   ```
 
-   npm run dev
+2. **Instala as dependencias**:
+
+   ```bash
+     npm install
+   ```
+
+3. **Iniciar o projeto**:
+
+   ```bash
+     npm run dev
+   ```
 
 ## Aprendizados
 
