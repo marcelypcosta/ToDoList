@@ -1,22 +1,20 @@
 import { Check, Trash2 } from "lucide-react";
+import type { ITask } from "../App";
 
-export interface ITask {
-  id: string;
-  task: string;
-  isChecked?: boolean;
-}
-export function Task({ task, isChecked }: ITask) {
+export function Task({ valueTask, isChecked }: ITask) {
   return (
     <div className="flex justify-between p-4 bg-[--gray-400] rounded-lg">
       {isChecked ? (
         <div className="flex gap-3 items-center">
           <Check className="text-white w-5 h-5 p-1 flex justify-center items-center rounded-full bg-[--purple-500] hover:bg-[--purple-400] transition-colors hover:cursor-pointer" />
-          <p className="text-[--gray-300] line-through font-light">{task}</p>
+          <p className="text-[--gray-300] line-through font-light">
+            {valueTask}
+          </p>
         </div>
       ) : (
         <div className="flex gap-3 items-center">
           <div className="w-5 h-5 rounded-full border-solid border-2 border-[--blue-400] hover:opacity-70 hover:cursor-pointer" />
-          <p className="text-white font-light">{task}</p>
+          <p className=" text-white font-light">{valueTask}</p>
         </div>
       )}
 
