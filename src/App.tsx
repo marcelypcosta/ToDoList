@@ -1,13 +1,13 @@
-import "./global.css";
 import { v4 as uuidv4 } from "uuid";
 
 import { useState } from "react";
 
+import { Info } from "./Components/Info";
+import { Task } from "./Components/Task";
 import { Empty } from "./Components/Empty";
 import { Header } from "./Components/Header";
-import { Info } from "./Components/Info";
 import { InputNewTask } from "./Components/InputNewTask";
-import { Task } from "./Components/Task";
+
 
 export interface ITask {
   id: string;
@@ -20,16 +20,24 @@ function App() {
 
   function addNewTask(valueTask: string) {
     const newTask: ITask = {
-      id: uuidv4(), 
+      id: uuidv4(),
       valueTask,
       isChecked: false,
     };
 
-    setTasks((prevTasks) => [...prevTasks, newTask]);
+    setTasks((tasksList) => [...tasksList, newTask]);
+  }
+
+  function deleteTask(id: string) {
+    const updateTaskList = tasks.filter((task) => {
+      return task.id !== id;
+    });
+
+    setTasks(updateTaskList);
   }
 
   return (
-    <div className="bg-[--gray-600] min-h-screen">
+    <div className="bg-gray-600 min-h-screen">
       <Header />
       <div className="w-1/2 m-auto mt-[-25px] flex flex-col gap-16">
         <InputNewTask onAddTask={addNewTask} />
@@ -39,7 +47,13 @@ function App() {
             <Empty />
           ) : (
             tasks.map(({ id, valueTask, isChecked }) => (
-              <Task key={id} id={id} valueTask={valueTask} isChecked={isChecked} />
+              <Task
+                key={id}
+                id={id}
+                valueTask={valueTask}
+                isChecked={isChecked}
+                onDelete={deleteTask}
+              />
             ))
           )}
         </div>
