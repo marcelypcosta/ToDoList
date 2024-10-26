@@ -19,7 +19,7 @@ export function Task({ id, valueTask, isChecked, onDelete }: ITaskProps) {
         </div>
       ) : (
         <div className="flex gap-3 items-center">
-          <div className="w-5 h-5 rounded-full border-solid border-2 border-b-blue-light hover:opacity-70 hover:cursor-pointer" />
+          <div className="w-5 h-5 rounded-full border-solid border-2 border-blue-light hover:opacity-70 hover:cursor-pointer" />
           <p className=" text-white font-light">{valueTask}</p>
         </div>
       )}
