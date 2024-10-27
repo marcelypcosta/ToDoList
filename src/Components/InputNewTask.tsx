@@ -13,6 +13,7 @@ export function InputNewTask({ onAddTask }: IAddNewTask) {
   }
 
   function handleCreateNewTask() {
+    if (valueNewTask === "") return;
     onAddTask(valueNewTask);
     setValueNewTask("");
   }
