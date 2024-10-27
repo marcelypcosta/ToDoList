@@ -8,7 +8,6 @@ import { Empty } from "./Components/Empty";
 import { Header } from "./Components/Header";
 import { InputNewTask } from "./Components/InputNewTask";
 
-
 export interface ITask {
   id: string;
   valueTask: string;
@@ -36,6 +35,17 @@ function App() {
     setTasks(updateTaskList);
   }
 
+  function toggleTask(id: string) {
+    const updatedTasks = tasks.map((task) => {
+      if (task.id === id) {
+        return { ...task, isChecked: !task.isChecked };
+      }
+      return task;
+    });
+    
+    setTasks(updatedTasks);
+  }
+
   return (
     <div className="bg-gray-600 min-h-screen">
       <Header />
@@ -53,6 +63,7 @@ function App() {
                 valueTask={valueTask}
                 isChecked={isChecked}
                 onDelete={deleteTask}
+                onToggle={toggleTask}
               />
             ))
           )}
