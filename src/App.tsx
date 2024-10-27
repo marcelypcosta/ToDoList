@@ -42,9 +42,12 @@ function App() {
       }
       return task;
     });
-    
+
     setTasks(updatedTasks);
   }
+
+  const totalTasks = tasks.length;
+  const completedTasks = tasks.filter((task) => task.isChecked).length;
 
   return (
     <div className="bg-gray-600 min-h-screen">
@@ -52,7 +55,7 @@ function App() {
       <div className="w-1/2 m-auto mt-[-25px] flex flex-col gap-16">
         <InputNewTask onAddTask={addNewTask} />
         <div className="flex flex-col gap-6">
-          <Info />
+          <Info totalTasks={totalTasks} completedTasks={completedTasks} />
           {tasks.length === 0 ? (
             <Empty />
           ) : (
