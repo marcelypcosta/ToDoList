@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="bg-gray-600 min-h-screen">
       <Header />
-      <div className="w-1/2 m-auto mt-[-25px] flex flex-col gap-16">
+      <div className="w-[90%] flex flex-col gap-16 md:w-3/4 lg:w-1/2 m-auto mt-[-25px]">
         <InputNewTask onAddTask={addNewTask} />
         <div className="flex flex-col gap-6">
           <Info totalTasks={totalTasks} completedTasks={completedTasks} />
