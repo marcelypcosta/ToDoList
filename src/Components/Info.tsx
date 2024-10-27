@@ -20,7 +20,7 @@ export function Info({ totalTasks, completedTasks }: InfoProps) {
             ? "0"
             : totalTasks === completedTasks
             ? "Todas"
-            : `${completedTasks}`}
+            : `${completedTasks} de ${totalTasks}`}
         </span>
       </div>
     </div>
